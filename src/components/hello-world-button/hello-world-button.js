@@ -1,4 +1,4 @@
-import "./hello-world-button.css";
+import "./hello-world-button.scss";
 
 class HelloWorldButton {
   buttonCssClass = "hello-world-button";
@@ -13,7 +13,7 @@ class HelloWorldButton {
       p.classList.add("hello-world-text");
       body.appendChild(p);
     };
-    button.classList.add("hello-world-button");
+    button.classList.add(this.buttonCssClass);
     body.appendChild(button);
   }
 }
