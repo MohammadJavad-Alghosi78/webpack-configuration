@@ -16,10 +16,14 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              name: "[name][contenthash:5].[ext]", // TO SET BETTER NAME FOR IMAGES AFTER BUILD PROJECT
+              name: "[name][contenthash:5].[ext]",
             },
           },
         ],
+      },
+      {
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"],
       },
     ],
   },
